@@ -348,7 +348,7 @@ export const routeMeta: RouteMeta = {
 
 			<spartan-page-bottom-nav>
 				<spartan-page-bottom-nav-link href="command" label="Command" />
-				<spartan-page-bottom-nav-link direction="previous" href="collapsible" label="Collapsible" />
+				<spartan-page-bottom-nav-link direction="previous" href="code-block" label="Code Block" />
 			</spartan-page-bottom-nav>
 		</section>
 		<spartan-page-nav />

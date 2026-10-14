@@ -17,6 +17,7 @@ export type PrimitiveSnippet =
 	| 'chart'
 	| 'checkbox'
 	| 'collapsible'
+	| 'code-block'
 	| 'combobox'
 	| 'command'
 	| 'context-menu'

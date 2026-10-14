@@ -39,6 +39,7 @@ export const components: Link[] = [
 	{ label: 'Chart', url: '/chart', new: true },
 	{ label: 'Checkbox', url: '/checkbox' },
 	{ label: 'Collapsible', url: '/collapsible' },
+	{ label: 'Code Block', url: '/code-block', new: true },
 	{ label: 'Combobox', url: '/combobox' },
 	{ label: 'Command', url: '/command' },
 	{ label: 'Context Menu', url: '/context-menu' },

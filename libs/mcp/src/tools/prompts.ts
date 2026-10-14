@@ -301,7 +301,7 @@ Still stuck? Provide more details about your setup and error messages.
 				Layout: ['aspect-ratio', 'scroll-area', 'collapsible', 'accordion', 'carousel', 'resizable', 'sidebar'],
 				'Date & Time': ['calendar', 'date-picker'],
 				Advanced: ['data-table', 'form-field', 'combobox', 'icon', 'navigation-menu'],
-				Utility: ['empty', 'kbd'],
+				Utility: ['code-block', 'empty', 'kbd'],
 				Chat: ['attachment', 'bubble', 'marker', 'message', 'message-scroller'],
 			};
 			const categorized = new Set(Object.values(categories).flat());

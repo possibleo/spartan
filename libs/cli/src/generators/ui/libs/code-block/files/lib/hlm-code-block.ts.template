@@ -1,0 +1,41 @@
+import { Directive, input } from '@angular/core';
+import { classes } from '<%- importAlias %>/utils';
+import { type VariantProps, cva } from 'class-variance-authority';
+
+export const codeBlockVariants = cva(
+	'spartan-code-block group/code-block relative flex w-full min-w-0 flex-col overflow-hidden',
+	{
+		variants: {
+			variant: {
+				default: 'spartan-code-block-variant-default',
+				destructive: 'spartan-code-block-variant-destructive',
+			},
+		},
+		defaultVariants: {
+			variant: 'default',
+		},
+	},
+);
+
+export type CodeBlockVariants = VariantProps<typeof codeBlockVariants>;
+export type CodeBlockSize = 'default' | 'sm';
+
+@Directive({
+	selector: '[hlmCodeBlock],hlm-code-block',
+	host: {
+		'data-slot': 'code-block',
+		'[attr.data-variant]': 'variant()',
+		'[attr.data-size]': 'size()',
+	},
+})
+export class HlmCodeBlock {
+	/** The tone of the block. */
+	public readonly variant = input<CodeBlockVariants['variant']>('default');
+
+	/** `sm` uses tighter padding and `text-xs` code, for tool output. */
+	public readonly size = input<CodeBlockSize>('default');
+
+	constructor() {
+		classes(() => codeBlockVariants({ variant: this.variant() }));
+	}
+}

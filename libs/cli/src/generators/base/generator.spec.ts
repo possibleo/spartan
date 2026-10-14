@@ -288,6 +288,7 @@ describe('hlmBaseGenerator', () => {
 			'button',
 			'card',
 			'checkbox',
+			'code-block',
 			'collapsible',
 			'command',
 			'dialog',

@@ -27,6 +27,7 @@ export const KNOWN_COMPONENTS: string[] = [
 	'carousel',
 	'chart',
 	'checkbox',
+	'code-block',
 	'collapsible',
 	'combobox',
 	'command',
